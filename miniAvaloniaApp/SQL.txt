@@ -1,0 +1,8 @@
+create table заказ
+(
+	ID int auto_increment
+		primary key,
+	Требование text null,
+	Содержание text null,
+	Название text null
+);
