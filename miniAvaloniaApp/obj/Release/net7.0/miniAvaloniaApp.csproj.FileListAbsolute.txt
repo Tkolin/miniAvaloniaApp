@@ -1,0 +1,7 @@
+C:\Users\Grigoriy\Desktop\miniAvaloniaApp\miniAvaloniaApp\obj\Release\net7.0\miniAvaloniaApp.csproj.AssemblyReference.cache
+C:\Users\Grigoriy\Desktop\miniAvaloniaApp\miniAvaloniaApp\obj\Release\net7.0\Avalonia\Resources.Inputs.cache
+C:\Users\Grigoriy\Desktop\miniAvaloniaApp\miniAvaloniaApp\obj\Release\net7.0\Avalonia\resources
+C:\Users\Grigoriy\Desktop\miniAvaloniaApp\miniAvaloniaApp\obj\Release\net7.0\miniAvaloniaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Grigoriy\Desktop\miniAvaloniaApp\miniAvaloniaApp\obj\Release\net7.0\miniAvaloniaApp.AssemblyInfoInputs.cache
+C:\Users\Grigoriy\Desktop\miniAvaloniaApp\miniAvaloniaApp\obj\Release\net7.0\miniAvaloniaApp.AssemblyInfo.cs
+C:\Users\Grigoriy\Desktop\miniAvaloniaApp\miniAvaloniaApp\obj\Release\net7.0\miniAvaloniaApp.csproj.CoreCompileInputs.cache
