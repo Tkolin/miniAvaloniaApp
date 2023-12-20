@@ -16,24 +16,26 @@ public class DataBaseManager
             UserID = "root",
             Password = "tkl909" // "tkl909"//"nrjkby99"
         };
-   // Получение списка заказов
+   // Получение списка заказов ИЗ БАЗЫ
     public static List<Order> GetOrders()
     {
-        List<Order> data = new List<Order>();
+        List<Order> data = new List<Order>(); // Список данных для вывода
 
-        using (var connection = new MySqlConnection(ConnectionString.ConnectionString))
+        using (var connection = new MySqlConnection(ConnectionString.ConnectionString)) // Создание переменной подключения
         {
-            connection.Open();
+            connection.Open();// Подключение к базе
 
-            using (var comand = connection.CreateCommand())
+            using (var comand = connection.CreateCommand()) // Создание переменной команды SQL
             {
-                comand.CommandText = "SELECT * FROM заказ";
+                comand.CommandText = "SELECT * FROM заказ";// Запрос на получения таблицы ЗАКАЗ
 
-                using (var reader = comand.ExecuteReader())
+                using (var reader = comand.ExecuteReader())// Выполнение запроса в переменную reader
                 {
-                    while (reader.Read())
+                    while (reader.Read())// Чтение каждой полученной строки
                     {
+                        // Добавление в список заказов
                         data.Add(
+                            // Конструктор заказа ->
                             new Order(
                                 reader.GetInt32("ID"),
                                 reader.GetString("Требование"),
@@ -42,9 +44,9 @@ public class DataBaseManager
                     }
                 }
             }
-            connection.Close();
+            connection.Close(); // Закрытие подключения к базе
         }
-        return data;
+        return data; // Возвращение заполненого списка
     }
 
 }
